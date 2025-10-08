@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <button class="toggle" id="btn">Toggle Theme</button>
+
+    <h1>Webkit Theme App</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, assumenda.</p>
+
+    <input type="text" placeholder="Enter something here...">
+
+    <button >Submit</button>
+
+    <script>
+        var theme = 'light';
+        
+        function toggleTheme(){
+            console.log("hello");
+            console.log(document.documentElement.classList);
+            
+            if(theme=='light'){
+                theme = 'dark';
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.remove('light')
+            }else{
+                theme = 'light';
+                document.documentElement.classList.add('light');
+                document.documentElement.classList.remove('dark')
+            }
+        }
+
+        document.getElementById('btn').addEventListener('click',()=>{
+            toggleTheme();
+        });
+    </script>
+</body>
+</html>

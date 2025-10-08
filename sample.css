@@ -1,0 +1,57 @@
+:root{
+    --primary-btn-color:blue;
+    --primary-btn-text-color:white;
+    --secondar-btn-color:grey;
+    --secondar-btn-text-color:black;
+
+    --primary-text-color:black;
+    --secondary-text-color:grey;
+
+    --bg-color:white;
+
+    background-color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.dark{
+    --primary-btn-color:blue;
+    --primary-btn-text-color:white;
+    --secondar-btn-color:grey;
+    --secondar-btn-text-color:black;
+
+    --primary-text-color:white;
+    --secondary-text-color:grey;
+
+    --bg-color:black;
+}
+
+h1{
+    color: var(--primary-text-color);
+    transition: all 0.3s ease;
+}
+p{
+    color: var(--secondary-text-color);
+    transition: all 0.3s ease;
+}
+
+
+.toggle{
+    background-color: grey;
+    border: none;
+    padding: 8px 15px;
+    background-color: rgb(146, 143, 143);
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+input{
+    color: var(--primary-text-color);
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: 2px solid grey;
+    transition: all 0.3s ease-in-out;
+}

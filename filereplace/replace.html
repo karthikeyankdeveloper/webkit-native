@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="theme-sheet" rel="stylesheet" href="light.css">
+
+</head>
+<body>
+    <button id="tog">Toggle Theme</button>
+
+    <script>
+        let lightTheme = true;
+        let theme = document.getElementById('theme-sheet');
+        document.getElementById('tog').addEventListener('click',()=>{
+            if(lightTheme){
+                lightTheme = false;
+                theme.href = 'dark.css';
+            }else{
+                lightTheme = true;
+                theme.href = 'light.css';
+            }
+        })
+    </script>
+</body>
+</html>

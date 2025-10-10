@@ -7,10 +7,7 @@
     --primary-text-color:black;
     --secondary-text-color:grey;
 
-    --bg-color:white;
-
-    background-color: var(--bg-color);
-    transition: all 0.3s ease-in-out;
+    --bg-color:white;    
 }
 
 .dark{
@@ -32,6 +29,11 @@ h1{
 p{
     color: var(--secondary-text-color);
     transition: all 0.3s ease;
+}
+
+body{
+    background-color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
 }
 
 
